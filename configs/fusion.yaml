@@ -1,0 +1,5 @@
+name: fusion
+_base_: base.yaml
+model:
+  type: fusion
+  dropout: 0.3

@@ -1,0 +1,5 @@
+name: cnn
+_base_: base.yaml
+model:
+  type: cnn
+  dropout: 0.3

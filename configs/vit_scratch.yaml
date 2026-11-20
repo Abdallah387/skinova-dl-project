@@ -1,0 +1,6 @@
+name: vit_scratch
+_base_: base.yaml
+model:
+  type: vit
+  name: vit_small_patch16_224
+  pretrained: false

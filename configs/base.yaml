@@ -1,0 +1,23 @@
+name: base
+data:
+  root: /kaggle/input/skin-cancer-mnist-ham10000   # change when running locally
+  cache_dir: cache
+  img_size: 224
+  split_seed: 42          # fixed: identical split for every model and seed
+  num_workers: 2
+train:
+  epochs: 30
+  batch_size: 64
+  lr: 3.0e-4
+  weight_decay: 1.0e-4
+  patience: 7
+  amp: true
+  augment: true
+  class_weights: true
+  class_weight_power: 1.0
+  sampler: false
+  loss: ce                # ce | focal
+  focal_gamma: 2.0
+model:
+  type: cnn
+  dropout: 0.3

@@ -1,0 +1,8 @@
+name: vit_pretrained
+_base_: base.yaml
+train:
+  lr: 5.0e-5
+model:
+  type: vit
+  name: vit_small_patch16_224
+  pretrained: true

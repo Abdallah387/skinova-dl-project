@@ -1,0 +1,5 @@
+name: svm
+_base_: base.yaml
+model:
+  type: svm
+  C: 10.0
